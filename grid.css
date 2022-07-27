@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    grid-area:
+    1 1 1
+    1 1 1;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+main{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+    
+}
+.first{
+    width: 100%;
+    padding: 2em;
+    background-color: hsl(31, 77%, 52%);
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+.second{
+    width: 100%;
+    padding: 2em;
+    background-color: hsl(184, 100%, 22%);
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+.third{
+    width: 100%;
+    padding: 2em;
+    background-color: hsl(179, 100%, 13%);
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+p{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    color: white;
+}
+h3{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 50px;
+}
+button{
+    background-color: white;
+    border: #f0f0f0;
+    border-radius: 20px;
+    box-sizing: content-box;
+    padding: 15px;
+    width: 50%;
+    margin: 5em 0 1em;
+}
+
+a :hover{
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    main{
+        width: 75%;
+    }   
+}
+
+@media (max-width: 1050px) {
+    main{
+        width: 87%;
+    }   
+}
+
+@media (max-width: 900px) {
+    main{
+        width: 96%;
+    }   
+}
+
+@media (max-width: 680px) {
+    main{
+        width: 100%;
+        font-size: 10px;
+    } 
+    button{
+        padding: 12px;
+        font-size: 10px;
+        margin: 3em 0 1em;
+    }
+} 
+
+@media (max-width: 590px) {
+    main{
+        width: 100%;
+        font-size: 9px;
+    } 
+    button{
+        padding: 12px;
+        font-size: 9px;
+        margin: 3em 0 1em;
+    }
+}  
+
+@media (max-width: 450px) {
+    main{
+        width: 100%;
+        font-size: 5px;
+    }   
+    button{
+        padding: 8px;
+        font-size: 5px;
+        margin: 3em 0 1em;
+    }
+}
